@@ -5,7 +5,9 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
-
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId "com.example.madlevel2task2"
         minSdkVersion 23
