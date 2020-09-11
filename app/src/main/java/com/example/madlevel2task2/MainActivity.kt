@@ -14,8 +14,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val questions = arrayListOf<Question>(
-        Question("EEEE" , true)
+    val questions = arrayListOf<Question>(
+        Question("A \'val\' and \'var\' are the same" , false),
+        Question("Mobile Application Development grants 12ECTS." , false),
+        Question("A Unit in Kotlin corresponds to a void in Java" , false),
+        Question("In Kotlin \'When\' Replaces the \'switch\' operator in Java" , false)
     )
     private val questionAdapter = QuestionAdapter(questions)
     // Don't forget to create a binding object as you did in previous assignments.
